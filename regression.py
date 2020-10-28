@@ -22,7 +22,7 @@ from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_Train, Y_Train)
 
-Y_Pred = regressor.predict(X_Test)   #Predicting the Test set result ￼
+Y_Pred = regressor.predict(X_Test)   #Predicting the Test set result
 
 plt.scatter(X_Train, Y_Train, color = 'blue')   #Visualising the Training set results
 plt.plot(X_Train, regressor.predict(X_Train), color = 'yellow')
